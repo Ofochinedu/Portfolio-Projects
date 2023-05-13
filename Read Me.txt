@@ -1,0 +1,6 @@
+This repository is for my Portfolio Projects for
+Data Collection, Cleaning, Analysis & Visualization in
+Ms Excel, SQL, Power Bi & Tableau
+
+Please feel free to make any neccesary recommendation/criticism for improvement on my work.
+It will be greatly appreciated.
