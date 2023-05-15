@@ -158,8 +158,6 @@ From PercentPopulationVaccinated
 
 
 
-
-
 --QUERIES USED FOR TABLEAU PORTFOLIO PRACTICE PROJECT
 
 Select Sum(New_cases) as Total_Cases, Sum(New_Deaths) as Total_Deaths, Sum(New_Deaths)/Sum
