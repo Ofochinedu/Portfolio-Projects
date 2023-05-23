@@ -1,0 +1,16 @@
+COVID DATASET PROJECT - MAY 2023
+The contents of this folder "Covid Dataset Project" is my self executed Data Analytics Project
+This is a personal project done to understand the basics of Data Analytics (Collection, Cleaning, Analysing & Visualisation)
+
+The data are dataset for Covid-19 records from 3rd January 2020 - 12th May 2023 and this shows the statistics/analytics
+The files used were sourced from https://ourworldindata.org/covid-deaths on 12th May, 2023
+
+The tools used to execute the contents of the folder are;
+  SQL - Used to clean and query the data for visualisation in Tableau
+  Excel - Used to prepare collect the data from SQL to be exported to tableau
+  Power BI - Used to clean, analyse and visualise the data   -   https://lnkd.in/dDs9ugD2
+  Tableau - Used to Visualise the information extracted      -   h
+
+There will be more projects as time goes on to upgrade my skillsets
+
+Feel free to give criticism, comments and tasks to help improve my skills.
