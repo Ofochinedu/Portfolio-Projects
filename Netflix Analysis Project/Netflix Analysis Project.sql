@@ -1,7 +1,13 @@
 
 ----CHALLENGE QUESTIONS
+----QUESTION NO. 1 - FIND MISSING DATA AND DEAL WITH IT ACCORDINGLY
 Select *
 From Netflix..netflix_titles
+Where date_added is null
+
+delete
+From Netflix..netflix_titles
+Where date_added is null
 
 
 ----QUESTION NO. 2 - ADD COLUMN YEAR_ADDED FROM DATE_ADDED COLUMN
@@ -30,7 +36,7 @@ From Netflix..netflix_titles
 Select
 	Top 1
 	Release_year,
-	Count(release_year) as "Most Popular Year"
+	Count(release_year) as "Count Most Popular"
 From Netflix..netflix_titles
 Group by release_year
 Order by 2 desc
@@ -39,7 +45,7 @@ Order by 2 desc
 ----QUESTION NO. 6 - YEAR MOST CONTENT GOT ADDED
 Select
 	Top 1 year_added,
-	Count(year_added) as "Most Content Added"
+	Count(year_added) as "Count Most Content"
 From Netflix..netflix_titles
 Group by year_added
 Order by 2 desc
