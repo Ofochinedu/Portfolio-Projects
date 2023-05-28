@@ -58,13 +58,3 @@ Select
 From Netflix..netflix_titles
 Group by title
 Order by 2 desc
-
-
-------QUESTION NO. 8 - THE TOP 5 MOST POPULAR MOVIE GENRE
---Select
---	Listed_in,
---	Charindex(' ', Listed_in),
---	Len(Listed_in),
---	--substring(Listed_in,1, Charindex(',', Listed_in) +1),
---	left(Listed_in, Charindex(',', Listed_in)-1)
---From Netflix..netflix_titles
