@@ -5,7 +5,7 @@ Netflix movies and TV shows data was used and it was acquired from (https://raw.
 This dataset consisted of 8810 rows and 12 columns
 
 
-## Project Understandings
+## Project Understanding
 Netflix operates the over-the-top subscription video on-demand service, which includes original films and television series commissioned or acquired by the company, and third-party content licensed from other distributors. This project was born out of my curiosity to answers some lingering question which includes but not limited to:
 1. Determining the top genre of shows Netflix releases
 2. To determine what year netflix added the most content
