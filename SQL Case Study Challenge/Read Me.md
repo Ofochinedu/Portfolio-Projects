@@ -70,7 +70,7 @@ From projects
 Group by id
 Order by Project_Period Desc
 
-	![Q1](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/b37c3e17-2206-4127-b98e-6fe850b80343)
+![Q1](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/b37c3e17-2206-4127-b98e-6fe850b80343)
 
 
 ### 2. Find all employees who are not managers.
@@ -81,7 +81,7 @@ From Employees
 Where job_title not like '%Manager%'
 
 
-	![Q2](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/561cd6bd-dbd9-4251-9a96-ebbafd7dff91)
+![Q2](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/561cd6bd-dbd9-4251-9a96-ebbafd7dff91)
 
 
 ### 3. Find all employees who have been hired after the start of a project in their department.
@@ -97,7 +97,7 @@ From Projects p
 Where start_date <= Hire_date
 
 
-	![Q3](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/5bca8b14-3ebc-4d1a-a76c-696a73aee185)
+![Q3](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/5bca8b14-3ebc-4d1a-a76c-696a73aee185)
 
 
 ### 4. Rank employees within each department based on their hire date (earliest hire gets the highest rank).
@@ -111,7 +111,7 @@ From Employees E
 	on E.department_id = D.id
 	
 	
-	![Q4](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/51c084a4-6d78-4db3-a619-5a276bc6b207)
+![Q4](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/51c084a4-6d78-4db3-a619-5a276bc6b207)
 
 
 ### 5. Find the duration between the hire date of each employee and the hire date of the next employee hired in the same department.
@@ -128,4 +128,4 @@ Group by E1.department_id,E1.hire_date,E1.name,E2.hire_date,E2.name,D.name
 Order by E1.department_id
 
 
-	![Q5](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/021af23a-98f7-499e-9f1b-0731739458bc)
+![Q5](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/021af23a-98f7-499e-9f1b-0731739458bc)
