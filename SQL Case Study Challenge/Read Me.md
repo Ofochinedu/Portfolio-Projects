@@ -61,57 +61,61 @@
 ## SQL Challenge Questions
 
 ### 1. Find the longest ongoing project for each department.
-Select id,
-	Name,
-	Start_date,
-	End_date,department_id,
-	Max(end_date - Start_date) as Project_Period
-From projects
-Group by id
-Order by Project_Period Desc
+    Select id,
+	   Name,
+	   Start_date,
+	   End_date,department_id,
+	   Max(end_date - Start_date) as Project_Period
+    From projects
+    Group by id
+    Order by Project_Period Desc
+![Q1](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/b37c3e17-2206-4127-b98e-6fe850b80343)
 
 
 ### 2. Find all employees who are not managers.
-Select id,
-	Name,
-	Job_Title
-From Employees
-Where job_title not like '%Manager%'
-
+    Select id,
+	   Name,
+	   Job_Title
+    From Employees
+    Where job_title not like '%Manager%'
+![Q2](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/561cd6bd-dbd9-4251-9a96-ebbafd7dff91)
 
 ### 3. Find all employees who have been hired after the start of a project in their department.
-Select p.department_id,
-	e.name,
-    e.job_title,
-    e.hire_date,
-    p.start_date project_start_date,
-    p.name project_name
-From Projects p
-	Join employees e
-	on p.department_id = e.department_id
-Where start_date <= Hire_date
+    Select p.department_id,
+	   e.name,
+    	   e.job_title,
+   	   e.hire_date,
+   	   p.start_date project_start_date,
+   	   p.name project_name
+    From Projects p
+	   Join employees e
+	   on p.department_id = e.department_id
+    Where start_date <= Hire_date
+![Q3](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/5bca8b14-3ebc-4d1a-a76c-696a73aee185)
 
 
 ### 4. Rank employees within each department based on their hire date (earliest hire gets the highest rank).
-Select	D.name dept_name,
-	E.name,
-    E.hire_date,
-    E.department_id,
-    Rank()Over(Partition by D.name Order by hire_date)
-From Employees E
-	Join Departments D
-	on E.department_id = D.id
+    Select D.name dept_name,
+    	   E.name,
+	   E.hire_date,
+	   E.department_id,
+	   Rank()Over(Partition by D.name Order by hire_date)
+    From Employees E
+	   Join Departments D
+	   on E.department_id = D.id
+![Q4](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/51c084a4-6d78-4db3-a619-5a276bc6b207)
 
 
 ### 5. Find the duration between the hire date of each employee and the hire date of the next employee hired in the same department.
-Select E1.department_id,D.name department_name,
-	E2.name,E2.hire_date,
-    E1.name new_hiree,E1.hire_date new_hire_date,
-    Max(E1.hire_date) - Min(E2.hire_date) duration
-From Employees E1
-	Join Employees E2
-	On E1.department_id = E2.department_id And E1.hire_date > E2.hire_date
-	Join departments D
-	On E1.department_id = D.id
-Group by E1.department_id,E1.hire_date,E1.name,E2.hire_date,E2.name,D.name
-Order by E1.department_id
+    Select E1.department_id, D.name department_name,
+    	   E2.name, E2.hire_date,
+	   E1.name new_hiree, E1.hire_date new_hire_date,
+	   Max(E1.hire_date) - Min(E2.hire_date) duration
+    From Employees E1
+    	   Join Employees E2
+	   On E1.department_id = E2.department_id And E1.hire_date > E2.hire_date
+	   Join departments D
+	   On E1.department_id = D.id
+    Group by E1.department_id,E1.hire_date,E1.name,E2.hire_date,E2.name,D.name
+    Order by E1.department_id
+![Q5](https://github.com/Ofochinedu/Portfolio-Projects/assets/127870290/021af23a-98f7-499e-9f1b-0731739458bc)
