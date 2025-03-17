@@ -6,19 +6,19 @@ This dataset consisted of 2330 rows and 22 columns
 
 
 ## Key Focus Area
-### Ticket Volume Trends:
+#### Ticket Volume Trends:
 1. Analyze daily, weekly and monthly volumes
 2. Compare volumes between workdays and weekends
 3. Examine ticket distribution during standard work hours versus after hours.
 4. Recognize peak ticket creation times
 
-### Ticket Content and Resolution:
+#### Ticket Content and Resolution:
 1. Identify trends in ticket topics
 2. Investigate first response and resolution times against SLAs.
 3. Compare support channels (chat, phone, email)
 4. Analyze ticket geography for trends in submissions or product issues.
 
-### Performance Metrics:
+#### Performance Metrics:
 1. Evaluate agent SLA adherence for first responses and resolutions.
 2. Explore customer satisfaction rates across agents, topics and other categories.
 3. Check how quickly tickets move through the resolution process.
